@@ -1,0 +1,20 @@
+create database DBCrud
+go
+use DBCrud
+
+go
+
+create table Empleado(
+IdEmpleado int primary key identity,
+Nombre varchar(50),
+Correo varchar(50),
+Sueldo int
+)
+
+go
+
+select * from Empleado
+
+
+insert into Empleado(Nombre,Correo,Sueldo) values
+('Jose Luis','Jose@gmail.com',5000)
